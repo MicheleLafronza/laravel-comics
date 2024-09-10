@@ -45,6 +45,15 @@ $siteLinks = [
     ["text" => "DC PowerVisa"],
 ];
 
+$footerLinks = [
+    ["url" => "/img/footer-facebook.png"],
+    ["url" => "/img/footer-twitter.png"],
+    ["url" => "/img/footer-youtube.png"],
+    ["url" => "/img/footer-pinterest.png"],
+    ["url" => "/img/footer-periscope.png"],
+];
+
+
 
 
 
@@ -127,6 +136,25 @@ $siteLinks = [
 </div>
 
 <div class="footer-bottom">
+
+    <div class="container">
+
+        <div class="sign-up">
+            <a href="">
+                SIGN-UP NOW!
+            </a>
+        </div>
+
+        <div class="links-container">
+            <a class="link-text" href="">FOLLOW US</a>
+            @foreach($footerLinks as $item)
+            <a class="link-icons" href="#">
+                <img src="{{ $item['url'] }}" alt="">
+            </a>
+            @endforeach
+        </div>
+
+    </div>
 
 </div>
 

@@ -1,0 +1,65 @@
+main {
+    background-color: black;
+
+    .jumbo {
+        max-width: 100%;
+    }
+
+    .container {
+        padding-bottom: 20px;
+
+        #current-series-button {
+            width: 15%;
+            background-color: $primary;
+            display: block;
+            padding: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border: none;
+            cursor:pointer;
+            position: absolute;
+            top: -30px;
+            left: 12px;
+            font-weight: bold;
+        }
+    }
+
+    .card-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+        position: relative;
+
+        .item {
+            flex-basis: calc((100% / 6) - 10px);
+            padding: 20px;
+            margin-top: 20px;
+        
+            img {
+                height: 200px;
+                object-fit: contain;
+            }
+        }
+        
+        .title {
+            color: white;
+            padding-top: 10px;
+        }
+
+    }
+
+    button {
+        width: 15%;
+        background-color: $primary;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        border: none;
+        cursor:pointer;
+    }
+
+}
