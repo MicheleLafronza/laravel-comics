@@ -1,0 +1,47 @@
+.footer-top {
+    background-color: rgba(2,130,249,255);
+
+    .container {
+        padding: 50px;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                img {
+                    display: block;
+                }
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                .link-img {
+                    float: left;
+                    width: 50px;
+                    
+                }
+
+            }
+        }
+    }
+}
+
+.footer-mid {
+    background: url(../assets/footer-bg.jpg);
+}
+
+.footer-bottom {
+    background-color: rgba(48,48,48,255);
+    position: relative;
+    z-index: 100;
+}
