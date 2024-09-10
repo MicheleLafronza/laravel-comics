@@ -20,4 +20,11 @@ Route::get('/', function () {
     return view('home', compact('comics'));
 })->name('home');
 
+Route::get('/characters', function (){
+
+    $text = 'Contenuto Characters';
+
+    return view('characters', compact('text'));
+})->name('characters');
+
 

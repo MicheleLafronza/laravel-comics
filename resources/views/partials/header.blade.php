@@ -2,7 +2,7 @@
 
 $header_links = [
     ["text" => "CHARACTERS", "name" => "characters"],
-    ["text" => "COMICS", "name" => "comics"],
+    ["text" => "COMICS", "name" => "/"],
     ["text" => "MOVIES", "name" => "movies"],
     ["text" => "TV", "name" => "tv"],
     ["text" => "GAMES", "name" => "games"],
@@ -26,7 +26,7 @@ $header_links = [
         <div class="menu">
             <ul>
                 @foreach ($header_links as $item)
-                    <li><a href="">{{ $item['text'] }}</a></li>
+                    <li><a href="{{ $item['name'] }}">{{ $item['text'] }}</a></li>
                 @endforeach
             </ul>
         </div>
