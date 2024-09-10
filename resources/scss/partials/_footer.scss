@@ -37,7 +37,61 @@
 }
 
 .footer-mid {
-    background: url(../assets/footer-bg.jpg);
+    background: url(/img/footer-bg.jpg);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .links {
+            flex-basis: 35%;
+            padding-top: 20px;
+            padding-left: 20px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 400px;
+
+            .list-title {
+                font-size: 1.5rem;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+
+            ul {
+
+                list-style-type: none;
+                display: block;
+
+                li {
+                    padding: 5px;
+                    color: grey;
+                    cursor: pointer;
+                }
+
+            }
+
+            .bg-logo {
+                flex-basis: 40%;
+                position: relative;
+                z-index: 0;
+
+                img {
+                    height: 115%;
+                    position: absolute;
+                    top: -25px;
+                    bottom: -25px;
+                    z-index: 0;
+                    max-width: 100%;
+                }
+                
+            }
+        }
+    
+    }
+
 }
 
 .footer-bottom {
